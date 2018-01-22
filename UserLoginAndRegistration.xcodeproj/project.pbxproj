@@ -115,12 +115,12 @@
 			children = (
 				CE49F1232014A06F00A5F475 /* AppDelegate.swift */,
 				CE49F1252014A06F00A5F475 /* ViewController.swift */,
+				CEF457292014DCDC005562D1 /* LoginViewController.swift */,
+				CE49F1432014BB7B00A5F475 /* RegisterPageViewController.swift */,
 				CE49F1272014A06F00A5F475 /* Main.storyboard */,
 				CE49F12A2014A06F00A5F475 /* Assets.xcassets */,
 				CE49F12C2014A06F00A5F475 /* LaunchScreen.storyboard */,
 				CE49F12F2014A06F00A5F475 /* Info.plist */,
-				CE49F1432014BB7B00A5F475 /* RegisterPageViewController.swift */,
-				CEF457292014DCDC005562D1 /* LoginViewController.swift */,
 			);
 			path = UserLoginAndRegistration;
 			sourceTree = "<group>";

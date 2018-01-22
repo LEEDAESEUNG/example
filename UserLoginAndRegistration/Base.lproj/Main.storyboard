@@ -116,6 +116,7 @@
                     <connections>
                         <outlet property="userPasswordTextField" destination="FhV-Uz-Pcu" id="wcU-Av-Zu4"/>
                         <outlet property="userStudentidTextField" destination="gxq-NQ-1et" id="EiO-2b-xKe"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="example" id="Qoy-ze-rBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijD-bC-8eR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,6 +194,9 @@
                                 <rect key="frame" x="16" y="393" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="I have an account. Let me login."/>
+                                <connections>
+                                    <segue destination="mwh-vX-8h9" kind="presentation" id="jhn-FM-0rV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -227,4 +231,8 @@
             <point key="canvasLocation" x="-286" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jhn-FM-0rV"/>
+        <segue reference="Qoy-ze-rBI"/>
+    </inferredMetricsTieBreakers>
 </document>

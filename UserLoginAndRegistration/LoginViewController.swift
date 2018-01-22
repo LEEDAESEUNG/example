@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
             switch response.result {
             case .success:
                 let respon  = response.result.value!
-                self.response(serverresponse: respon)
+                self.response(serverresponse: respon, userstudentid: userStudentid!, userpassword: userPassword!)
                 
             case .failure(let error):
                 print(error)
@@ -52,13 +52,24 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func response(serverresponse : String){
+    func response(serverresponse : String, userstudentid:String, userpassword:String){
         
         if (serverresponse == "sucess") {
-            self.displayMyAlertMessage(userMessage: "login successed");
-            return;
+            
+            
+            
+            let myAlert = UIAlertController(title: "Alert", message: "Login is sucessful", preferredStyle: UIAlertControllerStyle.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default)  {    action in
+                self.performSegue(withIdentifier: "example", sender: self)
+            }
+            myAlert.addAction(okAction)
+            self.present(myAlert,animated: true,completion: nil)
+            
+            
+            
             
         }
+            
         else if (serverresponse == "empty"){
             self.displayMyAlertMessage(userMessage: "cannot find any id");
             return;
